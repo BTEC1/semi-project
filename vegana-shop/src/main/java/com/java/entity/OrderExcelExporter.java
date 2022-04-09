@@ -97,30 +97,4 @@ public class OrderExcelExporter {
 
 	}
 
-	public OrderExcelExporter() {
-	}
-
-	public XSSFWorkbook getWorkbook() {
-		return workbook;
-	}
-
-	public void setWorkbook(XSSFWorkbook workbook) {
-		this.workbook = workbook;
-	}
-
-	public XSSFSheet getSheet() {
-		return sheet;
-	}
-
-	public void setSheet(XSSFSheet sheet) {
-		this.sheet = sheet;
-	}
-
-	public List<Order> getListOrDetails() {
-		return listOrDetails;
-	}
-
-	public void setListOrDetails(List<Order> listOrDetails) {
-		this.listOrDetails = listOrDetails;
-	}
 }

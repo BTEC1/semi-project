@@ -41,8 +41,6 @@ public class Customer implements UserDetails, CredentialsContainer {
 	@OneToMany(mappedBy = "customer")
 	private Collection<Role> roles;
 
-
-
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		List<GrantedAuthority> authorities = new ArrayList<>();
@@ -52,11 +50,6 @@ public class Customer implements UserDetails, CredentialsContainer {
 			authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
 		}
 		return authorities;
-	}
-
-	@Override
-	public String getPassword() {
-		return null;
 	}
 
 	@Override
@@ -87,76 +80,5 @@ public class Customer implements UserDetails, CredentialsContainer {
 	@Override
 	public void eraseCredentials() {
 		password = "";
-	}
-
-	public Customer() {
-	}
-
-	public String getCustomerId() {
-		return customerId;
-	}
-
-	public void setCustomerId(String customerId) {
-		this.customerId = customerId;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getFullname() {
-		return fullname;
-	}
-
-	public void setFullname(String fullname) {
-		this.fullname = fullname;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getPhoto() {
-		return photo;
-	}
-
-	public void setPhoto(String photo) {
-		this.photo = photo;
-	}
-
-	public Boolean getEnabled() {
-		return enabled;
-	}
-
-	public void setEnabled(Boolean enabled) {
-		this.enabled = enabled;
-	}
-
-	public String getRoleId() {
-		return roleId;
-	}
-
-	public void setRoleId(String roleId) {
-		this.roleId = roleId;
-	}
-
-	public Collection<Order> getOrders() {
-		return orders;
-	}
-
-	public void setOrders(Collection<Order> orders) {
-		this.orders = orders;
-	}
-
-	public Collection<Role> getRoles() {
-		return roles;
-	}
-
-	public void setRoles(Collection<Role> roles) {
-		this.roles = roles;
 	}
 }

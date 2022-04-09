@@ -29,31 +29,4 @@ public class Category implements Serializable {
 
 	@OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
 	private Collection<Product> products;
-
-	public Category() {
-	}
-
-	public Integer getCategoryId() {
-		return categoryId;
-	}
-
-	public void setCategoryId(Integer categoryId) {
-		this.categoryId = categoryId;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Collection<Product> getProducts() {
-		return products;
-	}
-
-	public void setProducts(Collection<Product> products) {
-		this.products = products;
-	}
 }
