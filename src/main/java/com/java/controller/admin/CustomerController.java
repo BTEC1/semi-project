@@ -28,5 +28,4 @@ public class CustomerController {
 		
 		return "/admin/customers";
 	}
-
 }

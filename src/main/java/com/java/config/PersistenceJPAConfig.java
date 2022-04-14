@@ -34,9 +34,9 @@ public class PersistenceJPAConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/vegana_store");
-		dataSource.setUsername("root");
-		dataSource.setPassword("123456");
+		dataSource.setUrl("jdbc:mysql://lekhanhtech.org:3308/venaga");
+		dataSource.setUsername("btec");
+		dataSource.setPassword("B@123tec");
 		return dataSource;
 	}
 
