@@ -30,11 +30,21 @@ public class PersistenceJPAConfig {
 		return em;
 	}
 
+//	@Bean
+//	public DataSource dataSource() {
+//		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+//		dataSource.setUrl("jdbc:mysql://lekhanhtech.org:3308/vegana_store");
+//		dataSource.setUsername("btec");
+//		dataSource.setPassword("B@123tec");
+//		return dataSource;
+//	}
+
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://lekhanhtech.org:3308/venaga");
+		dataSource.setUrl("jdbc:mysql://lekhanhtech.org:3308/vegana_store");
 		dataSource.setUsername("btec");
 		dataSource.setPassword("B@123tec");
 		return dataSource;
